@@ -1,0 +1,10 @@
+namespace: hello-aspire
+
+resources:
+- apiservice
+- namespace.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+

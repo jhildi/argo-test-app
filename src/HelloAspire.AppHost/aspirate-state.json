@@ -1,0 +1,16 @@
+{
+  "projectPath": ".",
+  "outputPath": "aspirate-output",
+  "namespace": "hello-aspire",
+  "containerRegistry": "localhost:5000",
+  "containerImageTags": [
+    "954d7ce"
+  ],
+  "imagePullPolicy": "IfNotPresent",
+  "containerBuilder": "docker",
+  "outputFormat": "kustomize",
+  "disableSecrets": true,
+  "privateRegistryEmail": "aspir8@aka.ms",
+  "includeDashboard": false,
+  "useCustomNamespace": true
+}
