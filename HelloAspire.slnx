@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HelloAspire.ApiService/HelloAspire.ApiService.csproj" />
+    <Project Path="src/HelloAspire.AppHost/HelloAspire.AppHost.csproj" />
+    <Project Path="src/HelloAspire.ServiceDefaults/HelloAspire.ServiceDefaults.csproj" />
+  </Folder>
+</Solution>
