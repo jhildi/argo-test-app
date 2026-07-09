@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: apiservice
-        image: localhost:5000/apiservice:954d7ce
+        image: ghcr.io/jhildi/apiservice:8cd5a2bbcd7d6522279c9b82e33da55bf6b70b14
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

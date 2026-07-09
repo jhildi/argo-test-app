@@ -1,8 +1,8 @@
 {
   "TemplatePath": null,
   "ContainerSettings": {
-    "Registry": "localhost:5000",
-    "RepositoryPrefix": null,
+    "Registry": "ghcr.io",
+    "RepositoryPrefix": "jhildi",
     "Tags": [
       "latest"
     ],
