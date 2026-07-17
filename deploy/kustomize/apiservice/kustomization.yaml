@@ -5,16 +5,18 @@ resources:
 
 images:
 - name: ghcr.io/jhildi/apiservice
-  newTag: 8cd5a2bbcd7d6522279c9b82e33da55bf6b70b14
+  newName: ghcr.io/jhildi/apiservice
+  newTag: 6b561e37456c27432d62cf6f6d65c0db543c1547
 
 generatorOptions:
   disableNameSuffixHash: true
 
 configMapGenerator:
-- name: apiservice-env
-  literals:
-    - OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY=in_memory
-    - ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
-    - HTTP_PORTS=8080
-    - ASPNETCORE_URLS=http://+:8080;
-
+- literals:
+  - OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY=in_memory
+  - ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+  - HTTP_PORTS=8080
+  - ASPNETCORE_URLS=http://+:8080;
+  name: apiservice-env
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
