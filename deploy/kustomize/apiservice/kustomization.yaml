@@ -3,6 +3,10 @@ resources:
 - service.yaml
 - ingress.yaml
 
+images:
+- name: ghcr.io/jhildi/apiservice
+  newTag: 8cd5a2bbcd7d6522279c9b82e33da55bf6b70b14
+
 generatorOptions:
   disableNameSuffixHash: true
 
